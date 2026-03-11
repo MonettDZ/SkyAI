@@ -1,4 +1,8 @@
-# Main entry point for the Sky AI application
+# Build script for Sky AI project
+import os
+
+def build():
+    os.system("pyinstaller --onefile src/main.py")
 
 if __name__ == "__main__":
-    print("Sky AI is running...")
+    build()
